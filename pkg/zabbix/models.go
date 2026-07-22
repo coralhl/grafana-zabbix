@@ -78,7 +78,7 @@ type TrendPoint struct {
 type History []HistoryPoint
 
 type HistoryPoint struct {
-	ItemID string  `json:"itemid,omitempty"`
+	ItemID int64  `json:"itemid,omitempty"`
 	Clock  int64   `json:"clock,omitempty,string"`
 	Value  float64 `json:"value,omitempty,string"`
 	NS     int64   `json:"ns,omitempty,string"`
